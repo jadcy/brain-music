@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <link rel="icon" href="img/music2.png">
+      <style>
+        figure{
+          display:inline-block;
+          width:33.3% !important;
+          margin:15px;
+          text-align:center;
+        }
+      </style>
+    </head>
+    <body>
+        <div class = "navbar-fixed">
+          <nav class = "nav red darken-4">
+            <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo"><img src = "img/logo.png"/></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="team.html">KID'S CORNER</a></li>
+                <li><a href="getting-here.html">GETTING HERE</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a class="waves-effect waves-light btn" style="background-color: #fbc02d" href="contacto.html">Traducir a espa&#xD1;ol</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        
+        <!--parallax-->
+        <div class="parallax-container">
+          <div class="parallax"><img src="img/contact.jpg"></div>
+        </div> 
+        
+        <br><br>
+        <div class="container">
+          <h4>For any unanswered questions or appointment scheduling, please leave us a message below or call Priscilla at <a style="color:#fbc02d" href="tel:323-557-3782">(323) 557-3782</a>.</h4>
+          <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+              </form>
+          </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s11">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">Message</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="center">
+          <a class="waves-effect waves-light btn-large red darken-4" href="contact.html"><i class="material-icons left">send</i>SUBMIT</a>
+        </div>
+        
+        <br><br>
+        <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 Jady Chan Copyright
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script>
+          $(document).ready(function(){
+            $('.parallax').parallax();
+            $('.modal').modal();
+          });
+        </script>
+    </body>
+    
+</html>
