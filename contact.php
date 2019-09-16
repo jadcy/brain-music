@@ -5,8 +5,8 @@
     $message = $_POST['message'];
     
     $mailTo = "jadychan@yahoo.com";
-    $headers = "From: ".$mailFrom;
     
-    mail($mailTo, $headers, $message);
+    mail($mailTo, $message);
+    
     header("Location: contact.html");
 ?>  
