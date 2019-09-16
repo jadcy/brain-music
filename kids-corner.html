@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,15 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
       <link rel="icon" href="img/music2.png">
+      <style>
+        figure{
+          display:inline-block;
+          width:33.3% !important;
+          margin:15px;
+          text-align:center;
+        }
+      </style>
     </head>
-    
     <body>
         <div class = "navbar-fixed">
           <nav class = "nav red darken-4">
@@ -25,38 +32,28 @@
                 <li><a href="kids-corner.html">KID'S CORNER</a></li>
                 <li><a href="getting-here.html">GETTING HERE</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
-                <li><a class="waves-effect waves-light btn" style="background-color: #fbc02d" href="indexsp.html">Traducir a espa&#xD1;ol</a></li>
+                <li><a class="waves-effect waves-light btn" style="background-color: #fbc02d" href="esquina.html">Traducir a espa&#xD1;ol</a></li>
               </ul>
             </div>
           </nav>
         </div>
         
-        <div class="slider">
-          <ul class="slides">
-            <li>
-              <img src="img/music2.png" class="responsive-img"> 
-              <div class="caption center-align">
-                <h3 style="background-color:#fbc02d;">WELCOME TO THE BRAIN & MUSIC LAB</h3>
-              </div>
-            </li>
-            <li>
-              <img src="img/music1.png" class="responsive-img">
-            </li>
-          </ul>
-        </div>
-      
-        <div class = "center">
-          <h3 style="color:#b71c1c">MUSIC, ARTS, AND CHILD DEVELOPMENT PROJECT</h3>
+        <br><br>
+        
+        <h2 style="text-align:center; font-family: "Times New Roman", Times, serif;">WELCOME TO THE KID'S CORNER!</h2>
+        
+        <div class="center">
+          <img src="img/kidbrain.png" usemap="kidscorner">
         </div>
         
-        <div class="container">
-          <div class="center">
-            <p style="text-align:center;">The goal of the MUSIC, ARTS and CHILD DEVELOPMENT research project is to investigate the impact of arts and music training on children’s cognitive, emotional, social, and brain development.</p>
-            <p style="text-align:center">This research project is a collaborative effort between <a href="https://dornsife.usc.edu/bci/" target="_blank" style="color:#fbc02d">USC Brain and Creativity Institute</a>, the <a href="https://www.laphil.com/education/local-programs/youth-orchestra-los-angeles/" target="_blank" style="color:#fbc02d">Los Angeles Philharmonic YOLA program</a>, and <a href="https://www.caminonuevo.org/" target="_blank" style="color:#fbc02d">Camino Nuevo Charter Academy</a>. Additionally, it is funded by the generous support of the <a href="https://www.laphil.com/" target="_blank" style="color:#fbc02d">Los Angeles Philharmonic Association</a> and the <a href="https://www.annenberg.org/initiatives/global-humanitarian-arts-education/grow-annenberg/" target="_blank" style="color:#fbc02d">GROW @ Annenberg</a>.</p>
-            <br>
-            <a class="waves-effect waves-light btn-large red darken-4" href="contact.html"><i class="material-icons left">people_outline</i>PARTICIPATE</a>
-          </div>
-        </div>
+        <map name="kidscorner">
+          <ul class="nav nav-pills mb-3" id="pills-tab2" role="tablist">
+          	<li class="nav-item"><area alt="welcome" aria-controls="pills-home" aria-selected="true" coords="0,0,0" data-toggle="pill" href="#pills-welcome" id="pills-welcome-tab" role="tab" shape="poly" title="welcome"></li>
+          	<li class="nav-item"><area alt="eeg experience" aria-controls="pills-home" aria-selected="false" coords="251,11,208,35,201,56,190,81,179,122,201,117,226,112,272,116,332,113,352,93,346,70,279,18,264,10" data-toggle="pill" href="#pills-eeg" id="pills-eeg-tab" role="tab" shape="poly" title="eeg experience" class=""></li>
+          	<li class="nav-item"><area alt="mri experience" aria-controls="pills-profile" aria-selected="true" coords="221,9,123,19,55,48,37,74,16,139,19,171,42,199,78,204,135,142,170,113,192,57" data-toggle="pill" href="#pills-mri" id="pills-mri-tab" role="tab" shape="poly" title="mri experience" class="active show"></li>
+          	<li class="nav-item"><area alt="mri video" aria-controls="pills-contact" aria-selected="false" coords="199,125,251,119,295,126,323,132,318,163,297,194,260,206,221,214,186,216,171,229,134,223,113,200,127,156,158,138" data-toggle="pill" href="#pills-mriv" id="pills-mriv-tab" role="tab" shape="poly" title="mri video" class=""></li>
+          </ul>
+        </map>
         
         <br><br>
         <footer class="page-footer">
@@ -66,14 +63,15 @@
             </div>
           </div>
         </footer>
-        
         <!-- Compiled and minified JavaScript -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
         <script>
           $(document).ready(function(){
-            $('.slider').slider();
+            $('.parallax').parallax();
+            $('.modal').modal();
           });
         </script>
     </body>
+    
 </html>

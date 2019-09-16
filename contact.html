@@ -27,9 +27,9 @@
             <div class="nav-wrapper">
               <a href="index.html" class="brand-logo"><img src = "img/logo.png"/></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">HOME</a></li>
                 <li><a href="team.html">TEAM</a></li>
-                <li><a href="team.html">KID'S CORNER</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="kids-corner.html">KID'S CORNER</a></li>
                 <li><a href="getting-here.html">GETTING HERE</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
                 <li><a class="waves-effect waves-light btn" style="background-color: #fbc02d" href="contacto.html">Traducir a espa&#xD1;ol</a></li>
@@ -47,7 +47,7 @@
         <div class="container">
           <h4>For any unanswered questions or appointment scheduling, please leave us a message below or call Priscilla at <a style="color:#fbc02d" href="tel:323-557-3782">(323) 557-3782</a>.</h4>
           <div class="row">
-              <form class="col s12">
+              <form class="col s12" action="contactform.php" method="post">
                 <div class="row">
                   <div class="input-field col s6">
                     <input id="first_name" type="text" class="validate">
@@ -64,31 +64,26 @@
                     <label for="email">Email</label>
                   </div>
                 </div>
-              </form>
-          </div>
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s11">
-                  <i class="material-icons prefix">mode_edit</i>
-                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                  <label for="icon_prefix2">Message</label>
+                <div class="row">
+                  <div class="input-field col s11">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                    <label for="icon_prefix2">Message</label>
+                  </div>
                 </div>
-              </div>
-            </form>
+                <div class="center">
+                  <a class="waves-effect waves-light btn-large red darken-4" type="submit" name="submit"><i class="material-icons left">send</i>SUBMIT</a>
+                </div>
+              </form>
           </div>
         </div>
         
-        <div class="center">
-          <a class="waves-effect waves-light btn-large red darken-4" href="contact.html"><i class="material-icons left">send</i>SUBMIT</a>
-        </div>
         
         <br><br>
         <footer class="page-footer">
           <div class="footer-copyright">
-            <div class="container">
+            <div class="container" style="color:white; text-align:center">
             © 2019 Jady Chan Copyright
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
         </footer>
